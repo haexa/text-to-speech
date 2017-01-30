@@ -34,8 +34,8 @@ public class GuiMain {
         btnSpeak.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String test = textField1.getText();
-                System.out.println(test);
+                String text = textField1.getText();
+                TextToSpeech.voice(text);
             }
         });
     }
